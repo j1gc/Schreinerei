@@ -1,4 +1,5 @@
 <script>
+	import Link from '$lib/components/link.svelte';
 	import Text from '$lib/components/text.svelte';
 	import '../app.css';
 </script>
@@ -22,18 +23,18 @@
 
 	<nav class="p-5 pl-9">
 		<ul class="list-disc">
-			<li><a href="/">Startseite</a></li>
-			<li><a href="/preise">Unsere Preise</a></li>
-			<li><a href="/inhalt">Bilder von unseren Produkten</a></li>
-			<li><a href="/kontakt">Kontakt und Impressum</a></li>
+			<li><Link href="/">Startseite</Link></li>
+			<li><Link href="/preise">Unsere Preise</Link></li>
+			<li><Link href="/inhalt">Bilder von unseren Produkten</Link></li>
+			<li><Link href="/kontakt">Kontakt und Impressum</Link></li>
 		</ul>
 	</nav>
 	<slot />
 	<footer class="flex justify-end">
 		<div class="flex flex-col">
-			<a href="/kontakt#Kontakt">Kontakt</a>
-			<a href="/kontakt">Impressum</a>
-			<Text>© 2021 by selfHTML</Text>
+			<Link href="/kontakt#Kontakt">Kontakt</Link>
+			<Link href="/kontakt">Impressum</Link>
+			<Text class="pt-2">© 2021 by selfHTML</Text>
 		</div>
 	</footer>
 </main>
