@@ -8,9 +8,7 @@
 	export { className as class };
 </script>
 
-<a
-	class={cn('underline text-blue-600 hover:text-blue-800 visited:text-purple-600', className)}
-	{...$$restProps}
->
+<!-- visited:text-purple-600/Link> -->
+<a class={cn('underline text-blue-600 hover:text-blue-800 ', className)} {...$$restProps}>
 	<slot />
 </a>
