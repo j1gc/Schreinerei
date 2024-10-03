@@ -8,12 +8,12 @@
 <article>
 	<PageTitle>Impressum</PageTitle>
 
-	<Text class="py-4">Angaben gem. § 5 TMG</Text>
+	<Text class="py-4">Angaben gem. {@html '&#xA7;'} 5 TMG</Text>
 
 	<dl>
 		<dt>Betreiber und Kontakt:</dt>
 		<dd class="pl-8">Schreinerei Meier</dd>
-		<dd class="pl-8">Möbelstr. 1</dd>
+		<dd class="pl-8">M{@html '&#xF&;'}belstr. 1</dd>
 		<dt></dt>
 		<dd class="pl-8">D-12345</dd>
 		<dt></dt>
@@ -34,20 +34,23 @@
 
 	<h3 class="py-4 text-xl font-bold">Berufsspezifische Angaben:</h3>
 	<Text class="py-2">Berufsbezeichnung: k. A.</Text>
-	<Text class="py-2">Zuständige Kammer: IHK Bayern</Text>
+	<Text class="py-2">Zust{@html '&#xE4;'}ndige Kammer: IHK Bayern</Text>
 	<Text class="py-2">Verliehen in/durch: k. A.</Text>
 	<Text class="py-2"
 		><Text>Folgende berufsrechtliche Regelungen finden Anwendung: k. A.</Text><Text
-			>Diese Regelungen können Sie einsehen unter: k. A.</Text
+			>Diese Regelungen k{@html '&#xF6;'}nnen Sie einsehen unter: k. A.</Text
 		></Text
 	>
-	<Text class="py-2">Zuständige Aufsichtsbehörde: Finanzamt Musterstadt</Text>
+	<Text class="py-2"
+		>Zust{@html '&#xE4;'}ndige Aufsichtsbeh{@html '&#xF6;'}rde: Finanzamt Musterstadt</Text
+	>
 	<Text class="py-2">Register und Registernummer: 999999 999999</Text>
 	<Text class="py-2">Umsatzsteuer-ID: 999999 999999</Text>
 	<Text class="py-2"
-		><Text>Verantwortlicher für journalistisch-redaktionelle Inhalte gem. § 55 II RstV:</Text><Text
-			>Hans Jürgen Mustermann</Text
-		></Text
+		><Text
+			>Verantwortlicher f{@html '&#xFC;'}r journalistisch-redaktionelle Inhalte gem. {@html '&#xA7;'}
+			55 II RstV:</Text
+		><Text>Hans J{@html '&#xF6;'}rgen Mustermann</Text></Text
 	>
 	<Text class="py-2"
 		>Quelle: <Link

@@ -12,15 +12,15 @@
 			</tr>
 			<tr>
 				<td>Tisch</td>
-				<td>50 €</td>
+				<td>50 {@html '&#x20AC;'}</td>
 			</tr>
 			<tr>
 				<td>Schrank</td>
-				<td>70 €</td>
+				<td>70 {@html '&#x20AC;'}</td>
 			</tr>
 			<tr>
 				<td>Bett</td>
-				<td>100 €</td>
+				<td>100 {@html '&#x20AC;'}</td>
 			</tr>
 		</tbody>
 	</table>

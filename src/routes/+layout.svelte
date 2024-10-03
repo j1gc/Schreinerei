@@ -34,7 +34,7 @@
 		<div class="flex flex-col">
 			<Link href="/kontakt#Kontakt">Kontakt</Link>
 			<Link href="/kontakt">Impressum</Link>
-			<Text class="pt-2">© 2021 by selfHTML</Text>
+			<Text class="pt-2">{@html '&#xA9;'} 2021 by selfHTML</Text>
 		</div>
 	</footer>
 </main>
