@@ -1,18 +1,27 @@
 <script>
 	import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
+
+	const images = [
+		{ src: 'img/cabinet.svg', alt: 'Kommode' },
+		{ src: 'img/dresser.svg', alt: 'Kommode mit Schubladen' },
+		{ src: 'img/filing-cabinet.svg', alt: 'Aktenschrank' },
+		{ src: 'img/table.svg', alt: 'Tisch' },
+		{ src: 'img/cupboard.svg', alt: 'Kleiderschrank' },
+		{ src: 'img/chair.svg', alt: 'Schaukelstuhl' },
+		{ src: 'img/desk.svg', alt: 'Schreibtisch' }
+	];
 </script>
 
 <PageTitle>Unsere Produkte</PageTitle>
 <Text class="py-8"
 	>Hier sehen Sie einen {@html '&#xDC;'}berblick {@html '&#xFC;'}ber unsere Angebote.</Text
 >
-<div class="grid grid-cols-4">
-	<img src="img/cabinet.svg" alt="Kommode" />
-	<img src="img/dresser.svg" alt="Kommode mit Schubladen" />
-	<img src="img/filing-cabinet.svg" alt="Aktenschrank" />
-	<img src="img/table.svg" alt="Tisch" />
-	<img src="img/cupboard.svg" alt="Kleiderschrank" />
-	<img src="img/chair.svg" alt="Schaukelstuhl" />
-	<img src="img/desk.svg" alt="Schreibtisch" />
+<!--TODO: Refactor into components-->
+<div class="flex">
+	<div class="sm:columns-4 columns-2 space-y-4">
+		{#each images as { src, alt }}
+			<img class="rounded-lg p-2 bg-red-800" {src} {alt} />
+		{/each}
+	</div>
 </div>

@@ -9,10 +9,7 @@
 </script>
 
 <h1
-	class={cn(
-		'text-3xl max-sm:text-xl font-bold p-4 bg-red-700 text-yellow-50 rounded-bl-3xl rounded-r-3xl',
-		className
-	)}
+	class={cn('sm:text-5xl text-xl font-bold rounded-bl-3xl rounded-r-3xl', className)}
 	{...$$restProps}
 >
 	<slot />

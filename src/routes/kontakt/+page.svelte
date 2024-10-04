@@ -13,7 +13,7 @@
 	<dl>
 		<dt>Betreiber und Kontakt:</dt>
 		<dd class="pl-8">Schreinerei Meier</dd>
-		<dd class="pl-8">M{@html '&#xF&;'}belstr. 1</dd>
+		<dd class="pl-8">M{@html '&#xF6;'}belstr. 1</dd>
 		<dt></dt>
 		<dd class="pl-8">D-12345</dd>
 		<dt></dt>

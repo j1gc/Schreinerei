@@ -4,7 +4,7 @@
 	import '../app.css';
 </script>
 
-<main class="bg-[beige] min-h-screen md:px-[15vw] overflow-scroll">
+<main class="bg-[#fffff] min-h-screen md:px-[21vw] overflow-scroll max-md:px-4 flex flex-col">
 	<header class="flex max-sm:flex-col">
 		<div>
 			<a class="w-[20px] h-[20px]" href="/" aria-label="Homepage">
@@ -21,16 +21,27 @@
 		</div>
 	</header>
 
-	<nav class="p-5 pl-9">
-		<ul class="list-disc">
-			<li><Link href="/">Startseite</Link></li>
-			<li><Link href="/preise">Unsere Preise</Link></li>
-			<li><Link href="/inhalt">Bilder von unseren Produkten</Link></li>
-			<li><Link href="/kontakt">Kontakt und Impressum</Link></li>
+	<!--TODO: Refactor into components-->
+	<nav class="pt-5 pb-10 flex max-md:justify-center">
+		<ul class="space-y-[0.1rem] md:max-w-64 w-full">
+			<li class="p-2 bg-red-800 rounded-t-lg text-[lightyellow]">
+				<a href="/">Startseite</a>
+			</li>
+			<li class="p-2 bg-red-800 text-[lightyellow]">
+				<a href="/preise">Unsere Preise</a>
+			</li>
+			<li class="p-2 bg-red-800 text-[lightyellow]">
+				<a href="/inhalt">Bilder von unseren Produkten</a>
+			</li>
+			<li class="p-2 bg-red-800 rounded-b-lg text-[lightyellow]">
+				<a href="/kontakt">Kontakt und Impressum</a>
+			</li>
 		</ul>
 	</nav>
-	<slot />
-	<footer class="flex justify-end">
+	<article class=" flex-grow">
+		<slot />
+	</article>
+	<footer class="flex justify-end mt-10">
 		<div class="flex flex-col">
 			<Link href="/kontakt#Kontakt">Kontakt</Link>
 			<Link href="/kontakt">Impressum</Link>

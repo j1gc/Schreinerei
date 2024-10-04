@@ -29,7 +29,7 @@
 		</ul>
 
 		<aside
-			class=" bg-red-700 text-white max-w-[11em] p-[1em] max-sm:mx-auto flex flex-col items-center text-center"
+			class="rounded-2xl bg-red-800 text-white max-w-[11em] p-[1em] max-sm:mx-auto flex flex-col items-center text-center"
 		>
 			<h3 class="py-4 text-2xl font-bold font-serif text-[lightyellow]">Angebot</h3>
 			<p>N{@html '&#xE4;'}chste Woche 10% auf alles!</p>

@@ -8,12 +8,6 @@
 	export { className as class };
 </script>
 
-<h2
-	class={cn(
-		'flex justify-center text-xl sm:text-3xl font-bold font-[cursive] text-red-700 bg-[LightSalmon] border border-red-800',
-		className
-	)}
-	{...$$restProps}
->
+<h2 class={cn('flex text-xl sm:text-4xl font-semibold', className)} {...$$restProps}>
 	<slot />
 </h2>
