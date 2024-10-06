@@ -1,7 +1,15 @@
 <script>
 	import Link from '$lib/components/link.svelte';
+	import * as Navigator from '$lib/components/navigator/index';
 	import Text from '$lib/components/text.svelte';
 	import '../app.css';
+
+	const navLinks = [
+		{ href: '/', text: 'Startseite' },
+		{ href: '/preise', text: 'Unsere Preise' },
+		{ href: '/inhalt', text: 'Bilder von unseren Produkten' },
+		{ href: '/kontakt', text: 'Kontakt und Impressum' }
+	];
 </script>
 
 <main class="bg-[#fffff] min-h-screen md:px-[21vw] overflow-scroll max-md:px-4 flex flex-col">
@@ -21,23 +29,14 @@
 		</div>
 	</header>
 
-	<!--TODO: Refactor into components-->
-	<nav class="pt-5 pb-10 flex max-md:justify-center">
-		<ul class="space-y-[0.1rem] md:max-w-64 w-full">
-			<li class="p-2 bg-red-800 rounded-t-lg text-[lightyellow]">
-				<a href="/">Startseite</a>
-			</li>
-			<li class="p-2 bg-red-800 text-[lightyellow]">
-				<a href="/preise">Unsere Preise</a>
-			</li>
-			<li class="p-2 bg-red-800 text-[lightyellow]">
-				<a href="/inhalt">Bilder von unseren Produkten</a>
-			</li>
-			<li class="p-2 bg-red-800 rounded-b-lg text-[lightyellow]">
-				<a href="/kontakt">Kontakt und Impressum</a>
-			</li>
-		</ul>
-	</nav>
+	<Navigator.Root class="">
+		{#each navLinks as link}
+			<Navigator.Item>
+				<a href={link.href}>{link.text}</a>
+			</Navigator.Item>
+		{/each}
+	</Navigator.Root>
+
 	<article class=" flex-grow">
 		<slot />
 	</article>
