@@ -8,8 +8,9 @@
 <Text class="pt-4"
 	>Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenw{@html '&#xFC;'}nsche zu erf{@html '&#xFC;'}llen.
 	In unserer Werkstatt produzieren wir selbst - mit Holz aus regionaler, nachhaltiger
-	Forstwirtschaft.</Text
->
+	Forstwirtschaft.
+</Text>
+
 <section class="py-8">
 	<Heading class="col-span-full">Unsere Leistungen:</Heading>
 
