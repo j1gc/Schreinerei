@@ -2,7 +2,7 @@
 	import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
 
-	const images = [
+	const products = [
 		{ src: 'img/cabinet.svg', alt: 'Kommode' },
 		{ src: 'img/dresser.svg', alt: 'Kommode mit Schubladen' },
 		{ src: 'img/filing-cabinet.svg', alt: 'Aktenschrank' },
@@ -17,11 +17,15 @@
 <Text class="py-8"
 	>Hier sehen Sie einen {@html '&#xDC;'}berblick {@html '&#xFC;'}ber unsere Angebote.</Text
 >
-<!--TODO: Refactor into components-->
+
 <div class="flex">
 	<div class="sm:columns-4 columns-2 space-y-4">
-		{#each images as { src, alt }}
-			<img class="rounded-lg p-2 bg-red-800" {src} {alt} />
+		{#each products as { src, alt }}
+			<article>
+				<figure>
+					<img class="rounded-lg p-2 bg-red-800" {src} {alt} />
+				</figure>
+			</article>
 		{/each}
 	</div>
 </div>
