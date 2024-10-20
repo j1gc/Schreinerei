@@ -12,11 +12,17 @@
 	];
 </script>
 
+<svelte:head>
+	<!-- Not needed, SvelteKit should be preloading the logo automatically -->
+	<link rel="preload" as="image" href="/img/logo.svg" />
+</svelte:head>
+
 <main class="bg-[#fffff] min-h-screen md:px-[21vw] overflow-scroll max-md:px-4 flex flex-col">
+	<!-- Logo, name and slogan -->
 	<header class="flex max-sm:flex-col">
 		<div>
-			<a class="w-[20px] h-[20px]" href="/" aria-label="Homepage">
-				<img src="./img/logo.svg" alt="logo" />
+			<a href="/" aria-label="Homepage">
+				<img class="w-[16rem] h-[10rem]" src="/img/logo.svg" alt="logo" />
 			</a>
 			<p class="text-3xl font-bold text-red-800">Schreinerei Meier</p>
 		</div>
@@ -29,17 +35,21 @@
 		</div>
 	</header>
 
+	<!-- Navigation -->
 	<Navigator.Root class="">
 		{#each navLinks as link}
 			<Navigator.Item>
-				<a href={link.href}>{link.text}</a>
+				<a href={link.href} class="block w-full h-full">{link.text}</a>
 			</Navigator.Item>
 		{/each}
 	</Navigator.Root>
 
+	<!-- Content -->
 	<article class=" flex-grow">
 		<slot />
 	</article>
+
+	<!-- Footer -->
 	<footer class="flex justify-end mt-10">
 		<div class="flex flex-col">
 			<Link href="/kontakt#Kontakt">Kontakt</Link>
