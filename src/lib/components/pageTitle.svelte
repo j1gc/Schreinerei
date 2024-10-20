@@ -9,7 +9,7 @@
 </script>
 
 <h1
-	class={cn('sm:text-5xl text-xl font-bold rounded-bl-3xl rounded-r-3xl', className)}
+	class={cn('sm:text-5xl text-xl font-sans font-medium rounded-bl-3xl rounded-r-3xl', className)}
 	{...$$restProps}
 >
 	<slot />
