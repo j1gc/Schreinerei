@@ -11,6 +11,7 @@
 	Forstwirtschaft.
 </Text>
 
+<!-- Services -->
 <section class="py-8">
 	<Heading class="col-span-full">Unsere Leistungen:</Heading>
 
@@ -38,6 +39,7 @@
 	</div>
 </section>
 
+<!-- Company history -->
 <section class="py-8">
 	<Heading>Unsere Geschichte:</Heading>
 	<Text class="pt-7">
