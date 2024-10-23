@@ -1,5 +1,6 @@
 <script>
-	import PageTitle from '$lib/components/pageTitle.svelte';
+	import Heading from '$lib/components/heading.svelte';
+import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
 
 	const products = [
@@ -27,5 +28,17 @@
 				</figure>
 			</article>
 		{/each}
+	</div>
+</div>
+
+<div class="pt-11">
+	<Heading>Unser Meister am Werk!</Heading>
+	<div class="pt-11">
+		<video class="rounded-2xl" width="640" height="480" controls>
+			<source src="/video/carpentry.mp4" type="video/mp4">
+			<track kind="captions" src="/video/captions.vtt" srclang="de" label="Deutsch">
+			Dieser Film zeigt eine Szene aus unserer Schreinerei.<br>
+			Ihr Browser kann dieses Video nicht wiedergeben. Sie können es unter <a href="#top">Link-Addresse</a> abrufen.
+		</video>
 	</div>
 </div>
