@@ -20,6 +20,10 @@
 </svelte:head>
 
 <main class="bg-[#fffff] min-h-screen md:px-[21vw] overflow-scroll max-md:px-4 flex flex-col">
+	<!-- Anchor for the top of the page. 
+	 Svelte is angry if missing-->
+	<div id="top"></div>
+
 	<!-- Logo, name and slogan -->
 	<header class="flex max-sm:flex-col">
 		<div>
