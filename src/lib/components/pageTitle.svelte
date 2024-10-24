@@ -4,13 +4,15 @@
 
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props { [key: string]: any }
+
+	let { class: className = undefined, children, ...rest }: Props = $props();
+	
 </script>
 
 <h1
 	class={cn('sm:text-5xl text-xl font-sans font-medium rounded-bl-3xl rounded-r-3xl', className)}
-	{...$$restProps}
+	{...rest}
 >
-	<slot />
+	{@render children?.()}
 </h1>

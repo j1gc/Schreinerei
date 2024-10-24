@@ -4,13 +4,18 @@
 
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props {
+		class?: $$Props['class'];
+		children?: import('svelte').Snippet;
+	}
+
+	let { class: className = undefined, children }: Props = $props();
+	
 </script>
 
 <nav class="pt-5 pb-10 flex max-md:justify-center">
 	<ul class={cn('space-y-[0.1rem] md:max-w-64 w-full slot-wrapper', className)}>
-		<slot />
+		{@render children?.()}
 	</ul>
 </nav>
 

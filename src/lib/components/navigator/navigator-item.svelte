@@ -4,10 +4,15 @@
 
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props {
+		class?: $$Props['class'];
+		children?: import('svelte').Snippet;
+	}
+
+	let { class: className = undefined, children }: Props = $props();
+	
 </script>
 
 <li class={cn('p-2 bg-red-800 text-[lightyellow]', className)}>
-	<slot />
+	{@render children?.()}
 </li>

@@ -4,11 +4,13 @@
 
 	type $$Props = HTMLAttributes<HTMLAnchorElement> & { href?: string };
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props { [key: string]: any }
+
+	let { class: className = undefined, children, ...rest }: Props = $props();
+	
 </script>
 
 <!-- visited:text-purple-600 underline text-blue-600 hover:text-blue-800 /Link> -->
-<a class={cn('underline text-red-900 ', className)} {...$$restProps}>
-	<slot />
+<a class={cn('underline text-red-900 ', className)} {...rest}>
+	{@render children?.()}
 </a>

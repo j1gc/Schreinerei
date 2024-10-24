@@ -3,6 +3,8 @@
 	import * as Navigator from '$lib/components/navigator/index';
 	import Text from '$lib/components/text.svelte';
 	import '../app.css';
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 
 	const navLinks = [
 		{ href: '/', text: 'Startseite' },
@@ -46,7 +48,7 @@
 
 	<!-- Content -->
 	<article class=" flex-grow">
-		<slot />
+		{@render children?.()}
 	</article>
 
 	<!-- Footer -->
