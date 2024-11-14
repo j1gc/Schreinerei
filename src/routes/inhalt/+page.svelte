@@ -24,7 +24,7 @@
 	<div class="sm:columns-4 columns-2 space-y-4">
 		{#each products as { src, alt }}
 			<article>
-				<h1 hidden>{alt}</h1>
+				<h2 hidden>{alt}</h2>
 				<figure>
 					<img class="rounded-lg p-2 lg:w-[12rem] lg:h-[12rem] bg-red-800" {src} {alt} />
 				</figure>
