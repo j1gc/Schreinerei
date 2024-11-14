@@ -3,9 +3,9 @@
 	import { Entity } from '$lib/entities';
 </script>
 
-<PageTitle class="mb-8">Unsere nur zu Beispielzwecken erdachten Phantasie-Preise</PageTitle>
+<PageTitle class="pb-8">Unsere nur zu Beispielzwecken erdachten Phantasie-Preise</PageTitle>
 <!--TODO: Refactor into components-->
-<div class=" rounded-lg border-[1.5px] overflow-hidden max-w-96">
+<div class="rounded-lg border-[1.5px] overflow-hidden max-w-96">
 	<table class="min-w-full">
 		<thead class="bg-[#e7e2e2] text-[#333] font-semibold"
 			><tr class="border-b-[1.5px]">

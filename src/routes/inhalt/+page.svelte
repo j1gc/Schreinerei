@@ -25,7 +25,7 @@
 		{#each products as { src, alt }}
 			<article>
 				<figure>
-					<img class="rounded-lg p-2 w-[12rem] h-[12rem] bg-red-800" {src} {alt} />
+					<img class="rounded-lg p-2 lg:w-[12rem] lg:h-[12rem] bg-red-800" {src} {alt} />
 				</figure>
 			</article>
 		{/each}
@@ -36,10 +36,11 @@
 	<Heading>Unser Meister am Werk!</Heading>
 	<div class="pt-11">
 		<video class="rounded-2xl" width="640" height="480" controls>
-			<source src="/video/carpentry.mp4" type="video/mp4">
-			<track kind="captions" src="/video/captions.vtt" srclang="de" label="Deutsch">
-			Dieser Film zeigt eine Szene aus unserer Schreinerei.<br>
-			Ihr Browser kann dieses Video nicht wiedergeben. Sie können es unter <a href="#top">Link-Addresse</a> abrufen.
+			<source src="/video/carpentry.mp4" type="video/mp4" />
+			<track kind="captions" src="/video/captions.vtt" srclang="de" label="Deutsch" />
+			Dieser Film zeigt eine Szene aus unserer Schreinerei.<br />
+			Ihr Browser kann dieses Video nicht wiedergeben. Sie können es unter
+			<a href="#top">Link-Addresse</a> abrufen.
 		</video>
 	</div>
 </div>

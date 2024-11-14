@@ -4,14 +4,15 @@
 
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 
-	interface Props { [key: string]: any }
+	interface Props {
+		[key: string]: any;
+	}
 
 	let { class: className = undefined, children, ...rest }: Props = $props();
-	
 </script>
 
 <!-- cannot nest block-level elements like <p> tags within other <p> tags, which violates HTML specifications -->
-<!--50 chars per line for optimal reading-->
+<!--50 chars per line limit for optimal reading-->
 <div class={cn('max-w-[50ch]', className)} {...rest}>
 	{@render children?.()}
 </div>
