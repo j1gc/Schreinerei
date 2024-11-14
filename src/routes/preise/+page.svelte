@@ -1,5 +1,6 @@
 <script>
 	import PageTitle from '$lib/components/pageTitle.svelte';
+	import { Entity } from '$lib/entities';
 </script>
 
 <PageTitle class="mb-8">Unsere nur zu Beispielzwecken erdachten Phantasie-Preise</PageTitle>
@@ -15,15 +16,15 @@
 		<tbody>
 			<tr>
 				<td class="p-3 font-normal text-center border-r-[1.5px] border-b-[1.5px]">Tisch</td>
-				<td class="p-3 font-normal border-b-[1.5px]">50 {@html '&#x20AC;'}</td>
+				<td class="p-3 font-normal border-b-[1.5px]">50 {@html Entity.Euro}</td>
 			</tr>
 			<tr>
 				<td class="p-3 font-normal text-center border-r-[1.5px] border-b-[1.5px]">Schrank</td>
-				<td class="p-3 font-normal border-b-[1.5px]">70 {@html '&#x20AC;'}</td>
+				<td class="p-3 font-normal border-b-[1.5px]">70 {@html Entity.Euro}</td>
 			</tr>
 			<tr>
 				<td class="p-3 font-normal text-center border-r-[1.5px]">Schreibtisch</td>
-				<td class="p-3 font-normal">100 {@html '&#x20AC;'}</td>
+				<td class="p-3 font-normal">100 {@html Entity.Euro}</td>
 			</tr>
 		</tbody>
 	</table>

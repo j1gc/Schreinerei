@@ -2,6 +2,7 @@
 	import Link from '$lib/components/link.svelte';
 	import * as Navigator from '$lib/components/navigator/index';
 	import Text from '$lib/components/text.svelte';
+	import { Entity } from '$lib/entities';
 	import '../app.css';
 	/** @type {{children?: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -51,7 +52,7 @@
 	</Navigator.Root>
 
 	<!-- Content -->
-	<article class=" flex-grow">
+	<article class="flex-grow">
 		{@render children?.()}
 	</article>
 
@@ -60,7 +61,7 @@
 		<div class="flex flex-col">
 			<Link href="/kontakt#Kontakt">Kontakt</Link>
 			<Link href="/kontakt">Impressum</Link>
-			<Text class="pt-2">{@html '&#xA9;'} 2021 by selfHTML</Text>
+			<Text class="pt-2">{@html Entity.Copyright} 2021 by selfHTML</Text>
 		</div>
 	</footer>
 </main>

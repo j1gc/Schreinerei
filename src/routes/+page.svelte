@@ -2,11 +2,12 @@
 	import Heading from '$lib/components/heading.svelte';
 	import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
+	import { Entity } from '$lib/entities';
 </script>
 
 <PageTitle>Willkommen bei der Schreinerei Meier im Internet!</PageTitle>
 <Text class="pt-4"
-	>Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenw{@html '&#xFC;'}nsche zu erf{@html '&#xFC;'}llen.
+	>Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenw{@html Entity.ü}nsche zu erf{@html Entity.ü}llen.
 	In unserer Werkstatt produzieren wir selbst - mit Holz aus regionaler, nachhaltiger
 	Forstwirtschaft.
 </Text>
@@ -18,15 +19,15 @@
 	<div class="flex max-sm:flex-col sm:justify-between mt-8">
 		<ul class="list-disc list-inside pl-8 max-sm:pb-8">
 			<li>
-				M{@html '&#xF6;'}bel nach Ihren W{@html '&#xFC;'}nschen
+				M{@html Entity.ö}bel nach Ihren W{@html Entity.ü}nschen
 				<ul class="list-disc list-inside pl-8">
-					<li>K{@html '&#xFC;'}chenm{@html '&#xF6;'}bel</li>
-					<li>Regale und Schrankw{@html '&#xE4;'}nde</li>
-					<li>Badezimmerm{@html '&#xF6;'}bel</li>
+					<li>K{@html Entity.ü}chenm{@html Entity.ö}bel</li>
+					<li>Regale und Schrankw{@html Entity.ü}nde</li>
+					<li>Badezimmerm{@html Entity.ö}bel</li>
 				</ul>
 			</li>
-			<li>Haust{@html '&#xFC;'}ren</li>
-			<li>Gartenz{@html '&#xE4;'}une</li>
+			<li>Haust{@html Entity.ü}ren</li>
+			<li>Gartenz{@html Entity.ä}une</li>
 			<li>Reparaturen</li>
 		</ul>
 
@@ -34,7 +35,7 @@
 			class="rounded-2xl bg-red-800 text-white max-w-[11em] p-[1em] max-sm:mx-auto flex flex-col items-center text-center"
 		>
 			<h3 class="py-4 text-2xl font-bold font-serif text-[lightyellow]">Angebot</h3>
-			<p>N{@html '&#xE4;'}chste Woche 10% auf alles!</p>
+			<p>N{@html Entity.ä}chste Woche 10% auf alles!</p>
 		</aside>
 	</div>
 </section>
@@ -43,13 +44,13 @@
 <section class="py-8">
 	<Heading>Unsere Geschichte:</Heading>
 	<Text class="pt-7">
-		Die Anf{@html '&#xE4;'}nge unserer Firma reichen bis ins Mittelalter zur{@html '&#xFC;'}ck, als
-		Horst Holzmann begann seine bisher f{@html '&#xFC;'}r den Eigenbedarf hergestellten M{@html '&#xF6;'}bel
-		auch auf dem Markt der n{@html '&#xE4;'}chsten Stadt zu verkaufen.
+		Die Anf{@html Entity.ä}nge unserer Firma reichen bis ins Mittelalter zur{@html Entity.ü}ck, als
+		Horst Holzmann begann seine bisher f{@html Entity.ü}r den Eigenbedarf hergestellten M{@html Entity.ö}bel
+		auch auf dem Markt der n{@html Entity.ä}chsten Stadt zu verkaufen.
 	</Text>
 	<Text class="pt-4"
-		>Sein Sohn f{@html '&#xFC;'}hrte diese Tradition fort und nach ihm noch viele weitere Kinder und
-		Kindeskinder. Heute f{@html '&#xFC;'}hrt Schwiegersohn Harry Meier den Betrieb in der 15.
+		>Sein Sohn f{@html Entity.ü}hrte diese Tradition fort und nach ihm noch viele weitere Kinder und
+		Kindeskinder. Heute f{@html Entity.ü}hrt Schwiegersohn Harry Meier den Betrieb in der 15.
 		Generation weiter und arbeitet bereits seinen Enkel als Nachfolger ein.
 	</Text>
 </section>

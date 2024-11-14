@@ -2,6 +2,7 @@
 	import Heading from '$lib/components/heading.svelte';
 	import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
+	import { Entity } from '$lib/entities';
 
 	const products = [
 		{ src: 'img/cabinet.svg', alt: 'Kommode' },
@@ -16,7 +17,7 @@
 
 <PageTitle>Unsere Produkte</PageTitle>
 <Text class="py-8"
-	>Hier sehen Sie einen {@html '&#xDC;'}berblick {@html '&#xFC;'}ber unsere Angebote.</Text
+	>Hier sehen Sie einen {@html Entity.Ü}berblick {@html Entity.ü}ber unsere Angebote.</Text
 >
 
 <div class="flex">
