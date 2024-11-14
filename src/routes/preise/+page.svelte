@@ -22,7 +22,7 @@
 				<td class="p-3 font-normal border-b-[1.5px]">70 {@html '&#x20AC;'}</td>
 			</tr>
 			<tr>
-				<td class="p-3 font-normal text-center border-r-[1.5px]">Bett</td>
+				<td class="p-3 font-normal text-center border-r-[1.5px]">Schreibtisch</td>
 				<td class="p-3 font-normal">100 {@html '&#x20AC;'}</td>
 			</tr>
 		</tbody>

@@ -1,6 +1,6 @@
 <script>
 	import Heading from '$lib/components/heading.svelte';
-import PageTitle from '$lib/components/pageTitle.svelte';
+	import PageTitle from '$lib/components/pageTitle.svelte';
 	import Text from '$lib/components/text.svelte';
 
 	const products = [
