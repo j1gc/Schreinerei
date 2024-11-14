@@ -1,38 +1,45 @@
-# create-svelte
+# Schreinerei
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A simple static Sveltekit Website that uses Tailwind CSS for styling created with help from the [tutorial](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg) from selfhtml.org and deployed on cloudflare pages accesible under https://schreinerei.jonas-flörke.de
 
-## Creating a project
+## Setup
 
-If you're seeing this, you've probably already done this step. Congrats!
+To set up the project locally, clone the repository and then install the dependencies:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# bun
+bun i
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# npm
+npm i
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+After installing the dependencies, you can start a local development server:
 
 ```bash
-npm run dev
+# bun
+bun run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# npm
+npm run dev
 ```
+
+This will launch the development environment, allowing you to view changes in real time as you edit your files.
 
 ## Building
 
-To create a production version of your app:
+To create an production build of the application:
 
 ```bash
+# bun
+bun run build
+
+# npm
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `npm run preview` or `bun run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
