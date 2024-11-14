@@ -24,7 +24,7 @@
 	<!-- Anchor for the top of the page. 
 	 Svelte Static Adapter is angry when missing-->
 	<div id="top"></div>
-	
+
 	<!-- Logo, name and slogan -->
 	<header class="flex max-sm:flex-col">
 		<div>
@@ -53,6 +53,7 @@
 
 	<!-- Content -->
 	<article class="flex-grow">
+		<!-- New syntax for slots in Svelte 5 -->
 		{@render children?.()}
 	</article>
 
