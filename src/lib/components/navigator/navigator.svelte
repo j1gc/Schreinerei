@@ -10,7 +10,6 @@
 	}
 
 	let { class: className = undefined, children }: Props = $props();
-	
 </script>
 
 <nav class="pt-5 pb-10 flex max-md:justify-center">

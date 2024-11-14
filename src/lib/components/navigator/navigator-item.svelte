@@ -10,7 +10,6 @@
 	}
 
 	let { class: className = undefined, children }: Props = $props();
-	
 </script>
 
 <li class={cn('p-2 bg-red-800 text-[lightyellow]', className)}>

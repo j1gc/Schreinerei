@@ -4,10 +4,11 @@
 
 	type $$Props = HTMLAttributes<HTMLAnchorElement> & { href?: string };
 
-	interface Props { [key: string]: any }
+	interface Props {
+		[key: string]: any;
+	}
 
 	let { class: className = undefined, children, ...rest }: Props = $props();
-	
 </script>
 
 <!-- visited:text-purple-600 underline text-blue-600 hover:text-blue-800 /Link> -->
