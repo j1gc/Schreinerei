@@ -6,6 +6,7 @@
 <PageTitle class="pb-8">Unsere nur zu Beispielzwecken erdachten Phantasie-Preise</PageTitle>
 <!--TODO: Refactor into components-->
 <div class="rounded-lg border-[1.5px] overflow-hidden max-w-96">
+	<!--Creates an html table with an head and body-->
 	<table class="min-w-full">
 		<thead class="bg-[#e7e2e2] text-[#333] font-semibold"
 			><tr class="border-b-[1.5px]">
@@ -13,6 +14,7 @@
 				<th class="p-3 font-normal">Preis</th>
 			</tr>
 		</thead>
+		<!--Creates rows with cels for item name and price-->
 		<tbody>
 			<tr>
 				<td class="p-3 font-normal text-center border-r-[1.5px] border-b-[1.5px]">Tisch</td>

@@ -11,6 +11,7 @@
 	let { class: className = undefined, children, ...rest }: Props = $props();
 </script>
 
+<!-- Custom Page title component with default css and html-->
 <h1
 	class={cn('sm:text-5xl text-xl font-sans font-medium rounded-bl-3xl rounded-r-3xl', className)}
 	{...rest}

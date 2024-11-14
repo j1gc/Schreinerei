@@ -17,6 +17,7 @@
 	<Heading class="col-span-full">Unsere Leistungen:</Heading>
 
 	<div class="flex max-sm:flex-col sm:justify-between mt-8">
+		<!-- Services in unorderd list-->
 		<ul class="list-disc list-inside pl-8 max-sm:pb-8">
 			<li>
 				M{@html Entity.ö}bel nach Ihren W{@html Entity.ü}nschen
@@ -31,6 +32,7 @@
 			<li>Reparaturen</li>
 		</ul>
 
+		<!-- Advert in aside component cus content of page is vaguely related-->
 		<aside
 			class="rounded-2xl bg-red-800 text-white max-w-[11em] p-[1em] max-sm:mx-auto flex flex-col items-center text-center"
 		>

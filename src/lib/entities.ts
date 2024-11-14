@@ -1,3 +1,6 @@
+// used for encoding special characters in html
+// https://www.w3schools.com/charsets/ref_html_entities_4.asp
+// Enum to make it easier to use in code
 export enum Entity {
 	Ä = '&#xC4;',
 	ä = '&#xE4;',

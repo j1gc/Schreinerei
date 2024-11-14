@@ -1,6 +1,7 @@
 # Schreinerei
 
 A simple static Sveltekit Website that uses Tailwind CSS for styling created with help from the [tutorial](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg) from selfhtml.org and deployed on cloudflare pages accesible under https://schreinerei.jonas-flörke.de
+To learn what the html elements in the project do hover over them in editors like Visual Studio Code or Webstorm, an defintion should show up from MDN.
 
 ## Setup
 

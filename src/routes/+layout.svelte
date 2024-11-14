@@ -34,6 +34,7 @@
 	<!-- Logo, name and slogan -->
 	<header class="flex max-sm:flex-col">
 		<div>
+			<!-- Logo with link to the homepage and aria label for screen readers-->
 			<a href="/" aria-label="Homepage">
 				<img class="w-[16rem] h-[10rem]" src="/img/logo.svg" alt="logo" />
 			</a>

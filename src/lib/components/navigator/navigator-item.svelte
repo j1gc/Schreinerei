@@ -12,6 +12,7 @@
 	let { class: className = undefined, children }: Props = $props();
 </script>
 
+<!-- Navigator item component for link-->
 <li class={cn('p-2 bg-red-800 text-[lightyellow]', className)}>
 	{@render children?.()}
 </li>

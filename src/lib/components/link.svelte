@@ -2,6 +2,7 @@
 	import type { HTMLAttributes } from 'svelte/elements';
 	import { cn } from '$lib/utils';
 
+	// accepts all the props that an anchor element can accept
 	type $$Props = HTMLAttributes<HTMLAnchorElement> & { href?: string };
 
 	interface Props {
@@ -12,6 +13,7 @@
 </script>
 
 <!-- visited:text-purple-600 underline text-blue-600 hover:text-blue-800 /Link> -->
+<!-- Custom Link component with default css and html -->
 <a class={cn('underline text-red-900 ', className)} {...rest}>
 	{@render children?.()}
 </a>

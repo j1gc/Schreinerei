@@ -1,4 +1,8 @@
+# node
 node_modules
+
+# Jetbrains
+.idea
 
 # Output
 .output
