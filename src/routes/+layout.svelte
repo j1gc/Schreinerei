@@ -25,8 +25,9 @@
 </svelte:head>
 
 <!-- main content of the page -->
+<!-- Classes for centering the children elements horizontally on page-->
 <main class="bg-[#fffff] min-h-screen md:px-[21vw] overflow-scroll max-md:px-4 flex flex-col">
-	<!-- Anchor for the top of the page. 
+	<!-- Anchor attribute for the top of the page. 
 	 Svelte Static Adapter is angry when missing-->
 	<div id="top"></div>
 
@@ -50,8 +51,10 @@
 	<!-- Navigation -->
 	<!-- Navigator is a component that wraps the navigation links and is here to register the allready declared routes in the script tag-->
 	<Navigator.Root class="">
+		<!-- Iterates over the navLinks array and creates a Navigator.Item for each link -->
 		{#each navLinks as link}
 			<Navigator.Item>
+				<!-- Assigns the links to the a element for hyperlinking to the diffrent pages-->
 				<a href={link.href} class="block w-full h-full">{link.text}</a>
 			</Navigator.Item>
 		{/each}
